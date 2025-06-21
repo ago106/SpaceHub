@@ -10388,11 +10388,16 @@ local function loadScript(url)
     return result
 end
 
-if not getgenv().FirstInject or getgenv().FirstInject == then
+if not getgenv().FirstInject or getgenv().FirstInject == false then
     if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
         print("[Space Hub]: Terms of Service not accepted.")
         loadScript(ToS)
-        repeat task.wait() until getgenv().isTosAccepted == true
+        local startTime = tick()
+        repeat task.wait() until getgenv().isTosAccepted == true or (tick() - startTime) > 10
+        if not getgenv().isTosAccepted then
+            warn("[Space Hub]: ToS acceptance timed out. Exiting.")
+            return
+        end
         print("[Space Hub]: Terms of Service accepted.")
     end
 
@@ -10403,13 +10408,13 @@ if not getgenv().FirstInject or getgenv().FirstInject == then
         warn("[Space Hub]: User is blacklisted.")
         return
     end
+    getgenv().FirstInject = true
 end
 
 local GamesByPlaceID = loadScript(IDS)
 local GamesByName = loadScript(NAMES)
 
 if not getgenv().Game or getgenv().Game == "" then
-    getgenv().FirstInject = true
     for PlaceID, Execute in pairs(GamesByPlaceID) do
         if PlaceID == game.PlaceId then
             loadScript(Execute)
@@ -10418,7 +10423,6 @@ if not getgenv().Game or getgenv().Game == "" then
     end
     warn("[Space Hub]: Game not found in PlaceID database (PlaceId: "..game.PlaceId..")")
 else
-    getgenv().FirstInject = true
     if GamesByName[getgenv().Game] then
         loadScript(GamesByName[getgenv().Game])
     else
