@@ -10390,9 +10390,10 @@ local function loadScript(url)
     return result
 end
 
-if not loadScript(ToS) then
+if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
+    loadScript(ToS)
     warn("[Space Hub]: Terms of Service not accepted.")
-    return
+    repeat task.wait() until getgenv().isTosAccepted = true
 end
 
 loadScript(Executed)
@@ -10428,7 +10429,6 @@ else
         warn("[Space Hub]: Game not found in either database (Name: "..tostring(getgenv().Game)..", PlaceId: "..game.PlaceId..")")
     end
 end
-
 
 
 --[[
