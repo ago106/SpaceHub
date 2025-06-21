@@ -1,5 +1,5 @@
 local Banned = {
-  "199.233.228.84"
+  "1"
 }
 
 return Banned
