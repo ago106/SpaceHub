@@ -10388,21 +10388,21 @@ local function loadScript(url)
     return result
 end
 
-if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
-    print("[Space Hub]: Terms of Service not accepted.")
-    loadScript(ToS)
-    repeat task.wait() until getgenv().isTosAccepted == true
-    print("[Space Hub]: Terms of Service accepted.")
-end
-
 if not getgenv().FirstInject or getgenv().FirstInject == then
-    loadScript(Executed)
-end
+    if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
+        print("[Space Hub]: Terms of Service not accepted.")
+        loadScript(ToS)
+        repeat task.wait() until getgenv().isTosAccepted == true
+        print("[Space Hub]: Terms of Service accepted.")
+    end
 
-local blacklistResult = loadScript(Blacklist)
-if blacklistResult or getgenv().Blacklisted then
-    warn("[Space Hub]: User is blacklisted.")
-    return
+    loadScript(Executed)
+
+    local blacklistResult = loadScript(Blacklist)
+    if blacklistResult or getgenv().Blacklisted then
+        warn("[Space Hub]: User is blacklisted.")
+        return
+    end
 end
 
 local GamesByPlaceID = loadScript(IDS)
