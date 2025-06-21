@@ -10351,6 +10351,10 @@
 
 
 
+if getgenv().isTosAccepted == true then
+    return
+end
+
 print([[
 	
 
@@ -10391,9 +10395,10 @@ local function loadScript(url)
 end
 
 if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
+    print("[Space Hub]: Terms of Service not accepted.")
     loadScript(ToS)
-    warn("[Space Hub]: Terms of Service not accepted.")
     repeat task.wait() until getgenv().isTosAccepted == true
+    print("[Space Hub]: Terms of Service accepted.")
 end
 
 loadScript(Executed)
