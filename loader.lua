@@ -10354,7 +10354,7 @@
 print([[
 	
 
-	  ██╗░░░░░██╗░░░██╗░█████╗░░█████╗░░█████╗░██████╗░███████╗
+    ██╗░░░░░██╗░░░██╗░█████╗░░█████╗░░█████╗░██████╗░███████╗
     ██║░░░░░██║░░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝
     ██║░░░░░██║░░░██║███████║██║░░╚═╝██║░░██║██████╔╝█████╗░░
     ██║░░░░░██║░░░██║██╔══██║██║░░██╗██║░░██║██╔══██╗██╔══╝░░
@@ -10391,7 +10391,7 @@ local function loadScript(url)
 end
 
 if not loadScript(ToS) then
-    warn("[Space Hub]: Terms of Service not accepted. Exiting.")
+    warn("[Space Hub]: Terms of Service not accepted.")
     return
 end
 
@@ -10399,7 +10399,7 @@ loadScript(Executed)
 
 local blacklistResult = loadScript(Blacklist)
 if blacklistResult or getgenv().Blacklisted then
-    warn("[Space Hub]: User is blacklisted. Exiting.")
+    warn("[Space Hub]: User is blacklisted.")
     return
 end
 
