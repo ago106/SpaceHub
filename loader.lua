@@ -10393,7 +10393,7 @@ end
 if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
     loadScript(ToS)
     warn("[Space Hub]: Terms of Service not accepted.")
-    repeat task.wait() until getgenv().isTosAccepted = true
+    repeat task.wait() until getgenv().isTosAccepted == true
 end
 
 loadScript(Executed)
