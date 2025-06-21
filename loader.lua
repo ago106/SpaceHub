@@ -10392,12 +10392,7 @@ if not getgenv().FirstInject or getgenv().FirstInject == false then
     if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
         print("[Space Hub]: Terms of Service not accepted.")
         loadScript(ToS)
-        local startTime = tick()
-        repeat task.wait() until getgenv().isTosAccepted == true or (tick() - startTime) > 10
-        if not getgenv().isTosAccepted then
-            warn("[Space Hub]: ToS acceptance timed out. Exiting.")
-            return
-        end
+        repeat task.wait() until getgenv().isTosAccepted == true
         print("[Space Hub]: Terms of Service accepted.")
     end
 
