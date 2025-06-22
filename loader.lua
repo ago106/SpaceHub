@@ -31053,8 +31053,10 @@
 
 repeat task.wait() until game:IsLoaded()
 
+repeat task.wait() until game:IsLoaded()
+
 print([[
-	
+
 
     ██╗░░░░░██╗░░░██╗░█████╗░░█████╗░░█████╗░██████╗░███████╗
     ██║░░░░░██║░░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝
@@ -31114,26 +31116,29 @@ end
 local GamesByPlaceID = loadScript(IDS)
 local GamesByName = loadScript(NAMES)
 
-if not getgenv().Game or getgenv().Game == "" then
+if not getgenv().GameName or getgenv().GameName == "" then
     for PlaceID, Execute in pairs(GamesByPlaceID) do
-        if PlaceID == game.PlaceId then
+        if tostring(PlaceID) == tostring(game.PlaceId) then
+            print("[Space Hub]: Found script for PlaceID: "..tostring(game.PlaceId))
             loadScript(Execute)
             return
         end
     end
-    warn("[Space Hub]: Game not found in PlaceID database (PlaceId: "..game.PlaceId..")")
+    warn("[Space Hub]: Game not found in PlaceID database (PlaceId: "..tostring(game.PlaceId)..")")
 else
-    if GamesByName[getgenv().Game] then
-        loadScript(GamesByName[getgenv().Game])
+    if GamesByName[getgenv().GameName] then
+        print("[Space Hub]: Found script for GameName: "..tostring(getgenv().GameName))
+        loadScript(GamesByName[getgenv().GameName])
     else
-        warn("[Space Hub]: Named game not found in database: "..tostring(getgenv().Game))
+        warn("[Space Hub]: Named game not found in database: "..tostring(getgenv().GameName))
         for PlaceID, Execute in pairs(GamesByPlaceID) do
-            if PlaceID == game.PlaceId then
+            if tostring(PlaceID) == tostring(game.PlaceId) then
+                print("[Space Hub]: Found script for PlaceID: "..tostring(game.PlaceId))
                 loadScript(Execute)
                 return
             end
         end
-        warn("[Space Hub]: Game not found in either database (Name: "..tostring(getgenv().Game)..", PlaceId: "..game.PlaceId..")")
+        warn("[Space Hub]: Game not found in either database (Name: "..tostring(getgenv().GameName)..", PlaceId: "..tostring(game.PlaceId)..")")
     end
 end
 
