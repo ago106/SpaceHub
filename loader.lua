@@ -31053,29 +31053,29 @@
 
 repeat task.wait() until game:IsLoaded()
 
-repeat task.wait() until game:IsLoaded()
+local function Printer()
+    print([[
 
-print([[
 
+        ██╗░░░░░██╗░░░██╗░█████╗░░█████╗░░█████╗░██████╗░███████╗
+        ██║░░░░░██║░░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝
+        ██║░░░░░██║░░░██║███████║██║░░╚═╝██║░░██║██████╔╝█████╗░░
+        ██║░░░░░██║░░░██║██╔══██║██║░░██╗██║░░██║██╔══██╗██╔══╝░░
+        ███████╗╚██████╔╝██║░░██║╚█████╔╝╚█████╔╝██║░░██║███████╗
+        ╚══════╝░╚═════╝░╚═╝░░╚═╝░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝
 
-    ██╗░░░░░██╗░░░██╗░█████╗░░█████╗░░█████╗░██████╗░███████╗
-    ██║░░░░░██║░░░██║██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝
-    ██║░░░░░██║░░░██║███████║██║░░╚═╝██║░░██║██████╔╝█████╗░░
-    ██║░░░░░██║░░░██║██╔══██║██║░░██╗██║░░██║██╔══██╗██╔══╝░░
-    ███████╗╚██████╔╝██║░░██║╚█████╔╝╚█████╔╝██║░░██║███████╗
-    ╚══════╝░╚═════╝░╚═╝░░╚═╝░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝
+                    DEVELOPER MESSAGE
+        Loader made by RBScr1pts.dll for Space Hub
+        Thanks Agush3nka to keep scripts live :)
+        If u need to setup same system ask in discord
 
-                DEVELOPER MESSAGE
-    Loader made by RBScr1pts.dll for Space Hub
-    Thanks Agush3nka to keep scripts live :)
-    If u need to setup same system ask in discord
-
-                    LOGGER
-    U must accept us ToS before using script
-    we informing ppl abt that when they injecting script
-    if u mega skidder and want to delete us webhook or spam
-    we need to waste 1 minute to change link, so we dont care abt "@everyone" pings
-]])
+                        LOGGER
+        U must accept us ToS before using script
+        we informing ppl abt that when they injecting script
+        if u mega skidder and want to delete us webhook or spam
+        we need to waste 1 minute to change link, so we dont care abt "@everyone" pings
+    ]])
+end
 
 local IDS = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/LuaCore/Selector/IDS.lua"
 local NAMES = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/LuaCore/Selector/NAMES.lua"
@@ -31095,6 +31095,7 @@ local function loadScript(url)
 end
 
 if not getgenv().FirstInject or getgenv().FirstInject == false then
+    Printer()
     warn("[Space Hub]: Game Loaded")
     if not getgenv().isTosAccepted or getgenv().isTosAccepted == false then
         print("[Space Hub]: Terms of Service not accepted.")
