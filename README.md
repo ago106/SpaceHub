@@ -9,6 +9,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 ## [Luacore v3.1] - 2025-6-30
 ### Added
 - Добавлен WorkInk в способ получения ключа к скрипту
+- Скрипт на игру DIG
 
 ### Changed
 - Обновлены ключ системы
