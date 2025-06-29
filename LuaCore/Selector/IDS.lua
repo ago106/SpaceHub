@@ -13,6 +13,7 @@ local IDS = {
     [142823291] = "", -- MM2
     [16732694052] = "https://gist.githubusercontent.com/ago106/7c61de715186c68b7e0580b4e7b1f8a0/raw/", -- Fisch sea 1 | should work
     [18901165922] = "https://gist.githubusercontent.com/ago106/5a42b815cccc68081f568a898ef55aab/raw", -- Pets Go | No key
+    [126244816328678] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/DIG.lua", -- DIG
     --[] = "",
 }
 
