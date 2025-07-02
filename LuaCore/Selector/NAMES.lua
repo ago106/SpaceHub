@@ -13,6 +13,7 @@ local Names = {
     ["none"] = "https://gist.githubusercontent.com/ago106/7c61de715186c68b7e0580b4e7b1f8a0/raw/", -- Fisch sea 1 | should work
     ["none"] = "https://gist.githubusercontent.com/ago106/5a42b815cccc68081f568a898ef55aab/raw", -- Pets Go | No key
     ["DIG"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/DIG.lua", -- DIG
+    ["Ink Game"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/InkGame.lua", -- Ink Game
     --[] = "",
 }
 
