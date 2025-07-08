@@ -16,6 +16,7 @@ local Names = {
     ["Ink Game"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/InkGame.lua", -- Ink Game
     ["Steal A Brainrot"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/StealBrainrot", -- Steal A Brainrot
     ["Forsaken"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Forsaken.lua", -- Forsaken
+    ["Dep Simulator"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Dep%20Simulator%202", -- Dep Simulator 2
     --[] = "",
 }
 
