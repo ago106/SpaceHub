@@ -17,6 +17,7 @@ local IDS = {
     [99567941238278] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/InkGame.lua", -- Ink Game Lobby
     [125009265613167] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/InkGame.lua", -- Ink Game Game
     [109983668079237] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/StealBrainrot", -- Steal A Brainrot
+    [96342491571673] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/StealBrainrot", -- Steal A Brainrot TutorialS
     [18687417158] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Forsaken.lua", -- Forsaken
     [132073733865215] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Dep%20Simulator%202", -- Dep Simulator 2
     --[] = "",
