@@ -19,6 +19,7 @@ local Names = {
     ["Dep Simulator"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Dep%20Simulator%202", -- Dep Simulator 2
     ["99Days"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/99DaysInForest.lua", -- 99 Days In Forest | Lobby/Game
     ["MSB"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/MySingingBrainrot.lua", -- My Singing Brainrot
+    ["CAFB"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/CatchAndFeedBrainrot.lua", -- Catch And Feed Brainrot
     --[] = "",
 }
 
