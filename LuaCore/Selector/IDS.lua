@@ -24,6 +24,7 @@ local IDS = {
     [126509999114328] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/99DaysInForest.lua", -- 99 Days In Forest | Game
     [89343390950953] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/MySingingBrainrot.lua", -- My Singing Brainrot
     [110931811137535] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/CatchAndFeedBrainrot.lua", -- Catch And Feed Brainrot
+    [111989938562194] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BrainrotEvolution.lua", -- Brainrot Evolution
     --[] = "",
 }
 
