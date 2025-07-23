@@ -25,7 +25,8 @@ local IDS = {
     [89343390950953] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/MySingingBrainrot.lua", -- My Singing Brainrot
     [110931811137535] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/CatchAndFeedBrainrot.lua", -- Catch And Feed Brainrot
     [111989938562194] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BrainrotEvolution.lua", -- Brainrot Evolution
-    --[] = "",
+    [11276071411] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/NpcOrDie.lua", -- NpsOrDie
+      --[] = "",
 }
 
 return IDS
