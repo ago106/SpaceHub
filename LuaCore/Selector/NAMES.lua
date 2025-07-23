@@ -21,6 +21,7 @@ local Names = {
     ["MSB"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/MySingingBrainrot.lua", -- My Singing Brainrot
     ["CAFB"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/CatchAndFeedBrainrot.lua", -- Catch And Feed Brainrot
     ["BE"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BrainrotEvolution.lua", -- Brainrot Evolution
+    ["NpcOrDie"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/NpcOrDie.lua", -- NpcOrDie
     --[] = "",
 }
 
