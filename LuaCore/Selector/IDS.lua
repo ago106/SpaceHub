@@ -26,7 +26,8 @@ local IDS = {
     [110931811137535] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/CatchAndFeedBrainrot.lua",     -- Catch And Feed Brainrot
     [111989938562194] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BrainrotEvolution.lua",        -- Brainrot Evolution
     [11276071411]     = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/NpcOrDie.lua",                 -- NpsOrDie
-      --[] = "",
+    [77483797026305]  = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/SFOTH.lua",                    -- Sword Fights on the Heights IV: Reforged
+--[] = "",
 }
 
 return IDS
