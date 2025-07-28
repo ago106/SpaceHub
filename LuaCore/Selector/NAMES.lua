@@ -23,6 +23,7 @@ local Names = {
     ["BE"]               = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BrainrotEvolution.lua",           -- Brainrot Evolution
     ["NpcOrDie"]         = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/NpcOrDie.lua",                    -- NpcOrDie
     ["SFOTH"]            = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/SFOTH.lua",                       -- Sword Fights on the Heights IV: Reforged
+    ["Prospecting"]      = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Prospecting.lua",                 -- Prospecting
 --[] = "",
 }
 
