@@ -1,1 +1,7 @@
-print("[Space Hub]: Soon")
+VirtualUser = game:GetService("VirtualUser")
+game.Players.LocalPlayer.Idled:Connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+    print("Roblox Tried to kick you but we didn't let them kick you :D")
+end)
+print("[Space Hub]: Anti-AFK Enabled")
