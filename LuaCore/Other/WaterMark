@@ -1,0 +1,109 @@
+local function CreateWatermark()
+    local RunService = game:GetService("RunService")
+    local TextService = game:GetService("TextService")
+    local CoreGui = game:GetService("CoreGui")
+    local Players = game:GetService("Players")
+    local player = Players.LocalPlayer
+
+    if CoreGui:FindFirstChild("WatermarkGui") then
+        CoreGui.WatermarkGui:Destroy()
+    end
+
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "WatermarkGui"
+    screenGui.Parent = CoreGui
+    screenGui.ResetOnSpawn = false
+    screenGui.DisplayOrder = 10
+
+    local frame = Instance.new("Frame")
+    frame.Position = UDim2.new(1, -10, 0, 15)
+    frame.AnchorPoint = Vector2.new(1, 0)
+    frame.Size = UDim2.new(0, 220, 0, 32)
+    frame.BackgroundTransparency = 0.05
+    frame.BackgroundColor3 = Color3.new(0.03, 0.03, 0.03)
+    frame.BorderSizePixel = 0
+    frame.Parent = screenGui
+
+    local corner = Instance.new("UICorner")
+    corner.CornerRadius = UDim.new(0, 5)
+    corner.Parent = frame
+
+    local padding = Instance.new("UIPadding")
+    padding.PaddingLeft = UDim.new(0, 10)
+    padding.PaddingRight = UDim.new(0, 10)
+    padding.PaddingTop = UDim.new(0, 5)
+    padding.PaddingBottom = UDim.new(0, 5)
+    padding.Parent = frame
+
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Size = UDim2.new(1, 0, 1, 0)
+    textLabel.BackgroundTransparency = 1
+    textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    textLabel.Font = Enum.Font.GothamMedium
+    textLabel.TextSize = 16
+    textLabel.TextXAlignment = Enum.TextXAlignment.Right
+    textLabel.TextYAlignment = Enum.TextYAlignment.Center
+    textLabel.RichText = true
+    textLabel.Parent = frame
+
+    local lastFpsUpdate = 0
+    local fps = 0
+    local lastPingUpdate = 0
+    local ping = 0
+    local startTime = tick()
+
+    local function formatTime(seconds)
+        local hours = math.floor(seconds / 3600)
+        local minutes = math.floor((seconds % 3600) / 60)
+        local secs = math.floor(seconds % 60)
+        
+        if hours > 0 then
+            return string.format("%d:%02d:%02d", hours, minutes, secs)
+        elseif minutes > 0 then
+            return string.format("%d:%02d", minutes, secs)
+        else
+            return string.format("%d", secs)
+        end
+    end
+
+    local function updateText()
+        local now = tick()
+
+        if now - lastFpsUpdate >= 0.75 then
+            fps = math.floor(1 / RunService.RenderStepped:Wait())
+            lastFpsUpdate = now
+        end
+
+        if now - lastPingUpdate >= 1 then
+            ping = math.floor(player:GetNetworkPing() * 1000)
+            lastPingUpdate = now
+        end
+
+        local runtime = now - startTime
+        local runtimeText = formatTime(runtime)
+
+        textLabel.Text = string.format(
+            '<font color="#BB66FF">Space Hub</font> | %d fps | %d ms | %s',
+            fps,
+            ping,
+            runtimeText
+        )
+
+        local textSize = TextService:GetTextSize(
+            textLabel.ContentText,
+            textLabel.TextSize,
+            textLabel.Font,
+            Vector2.new(math.huge, textLabel.AbsoluteSize.Y)
+        )
+        frame.Size = UDim2.new(0, textSize.X + 20, 0, 32)
+    end
+
+    RunService.RenderStepped:Connect(updateText)
+end
+
+local Game = game.PlaceId
+if Game == "142823291" or getgenv().GameName == "MM2" then
+  print("[Space Hub]: Custom Watermark")
+else
+  CreateWatermark()
+end
