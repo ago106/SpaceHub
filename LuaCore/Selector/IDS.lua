@@ -28,7 +28,8 @@ local IDS = {
     [11276071411]     = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/NpcOrDie.lua",                 -- NpsOrDie
     [77483797026305]  = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/SFOTH.lua",                    -- Sword Fights on the Heights IV: Reforged
     [129827112113663] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Prospecting.lua",              -- Prospecting
-    [93978595733734] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/ViolenceDistruct.lua",          -- Violence Distruct
+    [93978595733734]  = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/ViolenceDistruct.lua",         -- Violence Distruct
+    [185655149]       = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Bloxburg.lua",                 -- Bloxburg
 --[] = "",
 }
 
