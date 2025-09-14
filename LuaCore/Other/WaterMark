@@ -100,10 +100,3 @@ local function CreateWatermark()
 
     RunService.RenderStepped:Connect(updateText)
 end
-
-local Game = game.PlaceId
-if Game == "142823291" or getgenv().GameName == "MM2" then
-  print("[Space Hub]: Custom Watermark")
-else
-  CreateWatermark()
-end
