@@ -1,5 +1,5 @@
 local Status = "Active" --Active/Maintenance
-print(Status)
+print("[Space Hub]: " .. Status)
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 if Status == "Maintenance" then
