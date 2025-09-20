@@ -27,6 +27,7 @@ local Names = {
     ["ViolenceDistruct"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/ViolenceDistruct.lua",            -- Violence Distruct
     ["BloxBurg"]         = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Bloxburg.lua",                    -- Bloxburg
     ["RS3"]              = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/RS3.lua",                         -- Restaurant Tycoon 3
+    ["PlantVsBrainrots"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/PlantVsBrainrots.lua",            -- Plant Vs Brainrots
 --[] = "",
 }
 
