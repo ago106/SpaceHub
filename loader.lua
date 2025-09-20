@@ -20699,8 +20699,20 @@
  
 
 ]]
---[[local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
-proFunc()]]
+local function generateUUID()
+    local random = Random.new()
+    return string.format("%08x-%04x-%04x-%04x-%012x",
+        random:NextInteger(0, 0xffffffff),
+        random:NextInteger(0, 0xffff),
+        random:NextInteger(0, 0xffff),
+        random:NextInteger(0, 0xffff),
+        random:NextInteger(0, 0xffffffffffff)
+    )
+end
+
+print("Luacore:" .. generateUUID())
+local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
+proFunc()
 -- V3.2.3c Fixed UiToggle
 loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/924ce6aedcf583e0"))()
 -- V3.2.2b
