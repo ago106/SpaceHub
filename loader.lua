@@ -20699,8 +20699,8 @@
  
 
 ]]
-local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
-proFunc()
+--[[local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
+proFunc()]]
 -- V3.2.3c Fixed UiToggle
 loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/924ce6aedcf583e0"))()
 -- V3.2.2b
