@@ -33,6 +33,8 @@ local IDS = {
     [119048529960596] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/RS3.lua",                      -- Restaurant Tycoon 3
     [127742093697776] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/PlantVsBrainrots.lua",         -- Plant Vs Brainrots
     [121864768012064] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/FishIt.lua",                   -- Fish It 
+    [138837502355157] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Grace.lua",                    -- Grace | Lobby
+    [110333320616502] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Grace.lua",                    -- Grace | Game
 --[] = "",
 }
 
