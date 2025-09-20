@@ -100,3 +100,4 @@ local function CreateWatermark()
 
     RunService.RenderStepped:Connect(updateText)
 end
+CreateWatermark()
