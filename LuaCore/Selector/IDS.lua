@@ -35,7 +35,8 @@ local IDS = {
     [121864768012064] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/FishIt.lua",                   -- Fish It 
     [138837502355157] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Grace.lua",                    -- Grace | Lobby
     [110333320616502] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Grace.lua",                    -- Grace | Game
---[] = "",
+    [105555311806207] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BuildAZoo.Lua",                -- Build A Zoo
+    --[] = "",
 }
 
 return IDS
