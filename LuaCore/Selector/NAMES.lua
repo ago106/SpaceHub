@@ -30,6 +30,7 @@ local Names = {
     ["PlantVsBrainrots"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/PlantVsBrainrots.lua",            -- Plant Vs Brainrots
     ["FishIt"]           = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/FishIt.lua",                      -- Fish It 
     ["Grace"]            = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Grace.lua",                       -- Grace | Lobby
+    ["BuildAZoo"] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BuildAZoo.Lua",                          -- Build A Zoo
 --[] = "",
 }
 
