@@ -20706,8 +20706,11 @@ local executor = (identifyexecutor and identifyexecutor()) or (getexecutorname a
 if executor == "Xeno" then
 	print("Passed")
 else
-	local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
-	proFunc()
+	if not getgenv().Zaaaa == true then
+		local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
+		proFunc()
+		getgenv().Zaaaa = true
+	end
 end
 loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/924ce6aedcf583e0"))()
 -- V3.2.2b
