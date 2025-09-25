@@ -100,4 +100,8 @@ local function CreateWatermark()
 
     RunService.RenderStepped:Connect(updateText)
 end
-CreateWatermark()
+if game.PlaceId == 131716211654599 then
+    return
+else
+    CreateWatermark()
+end
