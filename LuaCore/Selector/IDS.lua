@@ -1,3 +1,4 @@
+print("12312312")
 local IDS = {
     [537413528]       = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BABFT.lua",                    -- BABFT
     [85896571713843]  = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BGSI.lua",                     -- Bubble gum simulator infinity
@@ -12,7 +13,7 @@ local IDS = {
     [1537690962]      = "",                                                                                                       -- BSS 
     [142823291]       = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/MM2.lua",                      -- MM2
     [16732694052]     = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Fisch.lua",                    -- Fisch
-    --[16732694052]     = "https://gist.githubusercontent.com/ago106/7c61de715186c68b7e0580b4e7b1f8a0/raw/",                      -- Fisch old | No Key | Bannable v2.1
+    --[16732694052]   = "https://gist.githubusercontent.com/ago106/7c61de715186c68b7e0580b4e7b1f8a0/raw/",                      -- Fisch old | No Key | Bannable v2.1
     [131716211654599] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/Fisch.lua",                    -- Fisch sea 1
     [18901165922]     = "https://gist.githubusercontent.com/ago106/5a42b815cccc68081f568a898ef55aab/raw",                         -- Pets Go | No key
     [126244816328678] = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/DIG.lua",                      -- DIG
