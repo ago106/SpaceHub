@@ -20707,7 +20707,7 @@ if executor == "Xeno" then
 	print("Passed")
 else
 	if not getgenv().Zaaaa == true then
-		local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua"))()
+		local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
 		proFunc()
 		getgenv().Zaaaa = true
 	end
