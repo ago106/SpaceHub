@@ -5,6 +5,10 @@ local function CreateWatermark()
     local Players = game:GetService("Players")
     local player = Players.LocalPlayer
 
+    if game.PlaceId == 131716211654599 then
+        return
+    end
+
     if CoreGui:FindFirstChild("WatermarkGui") then
         CoreGui.WatermarkGui:Destroy()
     end
@@ -19,14 +23,21 @@ local function CreateWatermark()
     frame.Position = UDim2.new(1, -10, 0, 15)
     frame.AnchorPoint = Vector2.new(1, 0)
     frame.Size = UDim2.new(0, 220, 0, 32)
-    frame.BackgroundTransparency = 0.5 
-    frame.BackgroundColor3 = Color3.new(0.03, 0.03, 0.03)
+    frame.BackgroundTransparency = 0.05
+    frame.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1)
     frame.BorderSizePixel = 0
     frame.Parent = screenGui
 
     local corner = Instance.new("UICorner")
-    corner.CornerRadius = UDim.new(0, 4)
+    corner.CornerRadius = UDim.new(0, 6)
     corner.Parent = frame
+
+    local stroke = Instance.new("UIStroke")
+    stroke.Color = Color3.fromHex("BB66FF")
+    stroke.Thickness = 2
+    stroke.Transparency = 0.2
+    stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    stroke.Parent = frame
 
     local padding = Instance.new("UIPadding")
     padding.PaddingLeft = UDim.new(0, 10)
@@ -69,7 +80,7 @@ local function CreateWatermark()
     local function updateText()
         local now = tick()
 
-        if now - lastFpsUpdate >= 0.75 then
+        if now - lastFpsUpdate >= 0.33 then
             fps = math.floor(1 / RunService.RenderStepped:Wait())
             lastFpsUpdate = now
         end
@@ -79,13 +90,14 @@ local function CreateWatermark()
             lastPingUpdate = now
         end
 
-        local sessionTime = formatTime(now - startTime)
+        local runtime = now - startTime
+        local runtimeText = formatTime(runtime)
 
         textLabel.Text = string.format(
             '<font color="#BB66FF">Space Hub</font> | %d fps | %d ms | %s',
             fps,
             ping,
-            sessionTime
+            runtimeText
         )
 
         local textSize = TextService:GetTextSize(
@@ -100,8 +112,4 @@ local function CreateWatermark()
     RunService.RenderStepped:Connect(updateText)
 end
 
-if game.PlaceId == 131716211654599 then
-    return
-else
-    CreateWatermark()
-end
+CreateWatermark()
