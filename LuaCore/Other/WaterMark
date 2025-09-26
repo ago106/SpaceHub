@@ -80,7 +80,7 @@ local function CreateWatermark()
     local function updateText()
         local now = tick()
 
-        if now - lastFpsUpdate >= 0.33 then
+        if now - lastFpsUpdate >= 0.77 then
             fps = math.floor(1 / RunService.RenderStepped:Wait())
             lastFpsUpdate = now
         end
