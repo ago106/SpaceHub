@@ -5,10 +5,6 @@ local function CreateWatermark()
     local Players = game:GetService("Players")
     local player = Players.LocalPlayer
 
-    if game.PlaceId == 131716211654599 then
-        return
-    end
-
     if CoreGui:FindFirstChild("WatermarkGui") then
         CoreGui.WatermarkGui:Destroy()
     end
@@ -112,4 +108,8 @@ local function CreateWatermark()
     RunService.RenderStepped:Connect(updateText)
 end
 
-CreateWatermark()
+if game.PlaceId == 131716211654599 or game.PlaceId == 16732694052 then
+    return
+else
+    CreateWatermark()
+end
