@@ -20700,7 +20700,7 @@
 
 ]]
 
-spawn(function() -- Important
+--[[spawn(function() -- Important
 	local function getExecutor()
 	    return (identifyexecutor and identifyexecutor()) or 
 	           (getexecutorname and getexecutorname()) or 
@@ -20717,7 +20717,7 @@ spawn(function() -- Important
 			getgenv().Zaaaa = true
 		end
 	end
-end)
+end)]]
 --[[if not getgenv().Zaaaa == true then
 	local proFunc = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustLuaDeveloper/AternosProject/main/AternosProtect/AternosMain.lua", true))()
 	proFunc()
