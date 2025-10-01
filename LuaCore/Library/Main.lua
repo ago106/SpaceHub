@@ -6975,9 +6975,10 @@ end
 local InterfaceManager = {} do
 	InterfaceManager.Folder = "FluentSettings"
 	InterfaceManager.Settings = {
+		Theme = "GameSense"
 		Acrylic = true,
 		Transparency = true,
-		MenuKeybind = "M"
+		MenuKeybind = "LeftControl"
 	}
 
 	function InterfaceManager:SetTheme(name)
@@ -7078,7 +7079,17 @@ local InterfaceManager = {} do
 				Library:SetWindowTransparency(Value)
 			end
 		})
-
+		
+		section:AddToggle("TransparentToggle", {
+			Title = "Transparency",
+			Description = "Makes the interface transparent.",
+			Default = Settings.Transparency,
+			Callback = function(Value)
+				Library:ToggleTransparency(Value)
+				Settings.Transparency = Value
+                InterfaceManager:SaveSettings()
+			end
+		})
 
 		local MenuKeybind = section:AddKeybind("MenuKeybind", { Title = "Minimize Bind", Default = Library.MinimizeKey.Name or Settings.MenuKeybind })
 		MenuKeybind:OnChanged(function()
