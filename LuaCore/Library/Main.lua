@@ -6975,7 +6975,7 @@ end
 local InterfaceManager = {} do
 	InterfaceManager.Folder = "FluentSettings"
 	InterfaceManager.Settings = {
-		Theme = "GameSense",
+		Theme = "Amethyst",
 		Acrylic = true,
 		Transparency = true,
 		MenuKeybind = "LeftControl"
@@ -7068,7 +7068,7 @@ local InterfaceManager = {} do
 			Settings.Acrylic = false
 		end
 
-		section:AddSlider("WindowTransparency", {
+		--[[section:AddSlider("WindowTransparency", {
 			Title = "Window Transparency",
 			Description = "Adjusts the window transparency.",
 			Default = 1,
@@ -7078,7 +7078,7 @@ local InterfaceManager = {} do
 			Callback = function(Value)
 				Library:SetWindowTransparency(Value)
 			end
-		})
+		})]]
 		
 		section:AddToggle("TransparentToggle", {
 			Title = "Transparency",
