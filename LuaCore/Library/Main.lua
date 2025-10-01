@@ -6975,7 +6975,7 @@ end
 local InterfaceManager = {} do
 	InterfaceManager.Folder = "FluentSettings"
 	InterfaceManager.Settings = {
-		Theme = "GameSense"
+		Theme = "GameSense",
 		Acrylic = true,
 		Transparency = true,
 		MenuKeybind = "LeftControl"
