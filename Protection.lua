@@ -4,10 +4,10 @@ Month = 10,
 Date = 21,
 Hour = 22,
 Minute = 50,
-Second = 51,
-LuaCore = "f2771309-1ecb-4bc4-b0bd-1a8d29dd6df6",
-KeySystem = "99989691193464688591456711085383",
-Validation = "phz57dje0gbbrr3w1pvwuvb7j9811r5mcroehxjuwo1ibnrfmlscr5aitgpzemgm"
+Second = 58,
+LuaCore = "75c5a899-50db-4049-a4b4-7dce38681d1d",
+KeySystem = "35649798667861181040830472508343",
+Validation = "q10t6eppgcayfy2cotwecsfvcdripbmxxve9dot7otnntqbyevsmvjhl58ggm179"
 }
 
 return Protection
