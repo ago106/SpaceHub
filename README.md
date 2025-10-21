@@ -50,7 +50,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=ago106&locale=en&mode=daily&theme=nightowl&hide_border=false&border_radius=5&order=3&background=0D1117&ring=6e40c9&fire=6e40c9&currStreakLabel=6e40c9&height=160" alt="Streak Stats" />
+<img src="https://streak-stats.demolab.com?repo=SpaceHub&locale=en&mode=daily&theme=nightowl&hide_border=false&border_radius=5&order=3&background=0D1117&ring=6e40c9&fire=6e40c9&currStreakLabel=6e40c9&height=160" alt="Streak Stats" />
 
 </div>
 
