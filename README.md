@@ -20,9 +20,9 @@
 
 <br>
 
-## ⚡ Quick Start
-
 <div align="center">
+
+## ⚡ Quick Start
 
 ```lua
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/loader.lua'))()
@@ -32,9 +32,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 
 <br>
 
-## 🎮 Supported Games
-
 <div align="center">
+
+## 🎮 Supported Games
 
 | Feature | Status |
 |---------|--------|
@@ -61,8 +61,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 
 <div align="center">
 
-![Lua](https://img.shields.io/badge/🔷_Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
-![Python](https://img.shields.io/badge/🐍_Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" height="45" alt="lua logo"  />
+<img width="15" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="45" alt="python logo"  />
+<img width="15" />
 
 </div>
 
@@ -77,8 +79,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 
 <br>
 
-## 📄 License
 <div align="center">
+
+
+## 📄 License
 
 This project is for **educational purposes** only.
 
