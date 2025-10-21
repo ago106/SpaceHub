@@ -4,11 +4,11 @@ local Protection = {
     Date = 21,
     Hour = 22,
     Minute = 55,
-    Second = 30,
-    LuaCore = "e09ad9dc-d2c3-42b2-bd0b-19897ea6ad8a",
-    Premium = "41635870359351394010521156520306",
-    KeySystem = "0822679095372567414316953672270523612684215926038461224231861834",
-    Validation = "35o2elqneixh7umhx46lr3rt8fpvu33b3eartq3eotp3lzhxy545p353ov9hddivvqknmtahovesp8feinr6mbay8comitx72qfeit9vz8y3ihsqwh7cond372i830oy"
+    Second = 37,
+    LuaCore = "08bd0b13-21ff-469a-961d-212f6c67850c",
+    Premium = "50542589357586908832827197832171",
+    KeySystem = "0085698708451584036384644659326426681966140834390472342846524436",
+    Validation = "ph7d2wogtbp4ghtrmlhkjx39r8p0p6h6racgsjppah8f9cumxbmfegu2l26dvyo0dhfw2dn5xs01md4xmc6807xnup68hoy77mkszcyxov6dmun8kuhtg4mfb3e43ckk"
 }
 
 return Protection
