@@ -57,9 +57,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 
 <br>
 
-## 🛠️ Technology Stack
-
 <div align="center">
+
+## 🛠️ Technology Stack
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" height="45" alt="lua logo"  />
 <img width="15" />
@@ -70,6 +70,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 
 <br>
 
+<div align="center">
 ## 📜 Changelog
 
 ### 🗓️ 2025/6/30 - Script (main loader)
@@ -78,9 +79,9 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 - 🔗 GitHub raw content integration
 
 <br>
+<br>
 
 <div align="center">
-
 
 ## 📄 License
 
