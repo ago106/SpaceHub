@@ -71,6 +71,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 <br>
 
 <div align="center">
+
 ## 📜 Changelog
 
 ### 🗓️ 2025/6/30 - Script (main loader)
@@ -78,7 +79,8 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/
 - ⚡ Basic script loading functionality
 - 🔗 GitHub raw content integration
 
-<br>
+</div>
+
 <br>
 
 <div align="center">
@@ -98,3 +100,6 @@ This project is for **educational purposes** only.
 ![Footer](https://img.shields.io/badge/🚀_Explore_Space_Hub-6e40c9?style=for-the-badge&logo=rocket&logoColor=white)
 
 </div>
+3. Сохранена вся оригинальная структура и форматирование
+
+Теперь HTML-структура правильно сбалансирована, все открывающие телы `<div>` имеют соответствующие закрывающие теги `</div>`.
