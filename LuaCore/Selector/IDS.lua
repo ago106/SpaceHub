@@ -1,4 +1,4 @@
-print("12312312")
+print("[Space Hub]: Loaded IDs list of scripts.")
 local IDS = {
     [537413528]       = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BABFT.lua",                    -- BABFT
     [85896571713843]  = "https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/Scripts/BGSI.lua",                     -- Bubble gum simulator infinity
